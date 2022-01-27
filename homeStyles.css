@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+
+body{
+  overflow-x: hidden;
+  
+}
+header {
+  background: #55d6aa;
+}
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+nav ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  padding: 15px 0px 6px 0px;
+  margin-right: 35px;
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+nav a:hover {
+  color: #000;
+}
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+.mybar{
+  cursor: pointer;
+  transform: scale(1.8);
+  margin: 15px 10px;
+  float:right;
+}
+.mynav{
+  display: none;
+}
+@media screen and (min-width: 523px) {
+  .mybar{display: none;}
+  .mynav{display: block !important;}
+}
+.card{
+  transform: scale(0.9);
+  margin:2px;
+}
+.card:hover{
+  transform: scale(1.0);
+}
+.card-tittle{
+  text-align: center;
+  font-family: Bebas Neue;
+  font-size: min(3vw,30px);
+}
+.card-text{
+  font-family: Aleo;
+  font-size: min(2vw,20px);
+}
+.bg1{
+  background-color: powderblue;
+}
+.bg2 img{
+  margin: 150px 0px 20px 0px;
+  max-width: 40vw;
+}
+.bg2{
+  font-family: Bebas Neue;
+  margin-bottom: -17px;
+  font-size: min(60px,4vw);
+  text-align: center;
+  background-image: linear-gradient(powderblue,royalblue);
+}
+.bg3{
+  word-spacing: 0.1vw;
+  margin-bottom: -20px;
+  font-family: Aleo;
+  font-size: min(2vw,20px);
+  padding: 5% 10% 0 10%;
+  background-image: linear-gradient(royalblue,powderblue);
+}
+.bg4{
+  word-spacing: 0.1vw;
+  font-family: Aleo;
+  padding: 10% 5% 0 5%;
+  margin-bottom: -18px;
+  font-size: min(2vw,20px);
+  line-height: 2.5;
+  background-image: linear-gradient(rgb(155, 218, 226),royalblue);
+}
+.bg4 img{
+  max-width: min(520px,40vw);
+  float: left;
+  margin-right: 4vw;
+}
+.bg5{
+  word-spacing: 0.1vw;
+  font-family: Aleo;
+  padding: 10% 5% 0 5%;
+  font-size: min(2vw,20px);
+  padding-bottom: 50px;
+  line-height: 2.5;
+  background-image: linear-gradient(royalblue,rgb(155, 218, 226));
+}
+.bg5 img{
+  float: right;
+  max-width: min(480px,40vw);
+  margin-left: 4vw;
+}
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+.from-left{
+  transform: translateX(-50%);
+}
+.from-right{
+  transform: translateX(50%);
+}
+.from-left,
+.from-right {
+  transition: opacity 250ms ease-in, transform 800ms ease-in;
+  opacity: 0;
+}
+
+.from-left.appear{
+  transform: translateX(-5%);
+  opacity: 1;
+}
+.from-right.appear{
+  transform: translateX(5%);
+  opacity: 1;
+}
+.medcouns{
+  margin-top: 2.5vh;
+  font-size: 2.4vw;
+  font-weight: 900;
+}
+.fa {
+  padding: 20px;
+  width: 52px;
+  font-size: 18px!important;
+  text-decoration: none;
+  margin: 7px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    background: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  margin-right: 20px !important;
+}
+.subus {
+	color: #fff !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #30c249;
+	padding: 12px;
+	border-radius: 50px;
+	display: inline-block;
+	transition: all 0.4s ease 0s;
+}
+.subus:hover {
+	text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
+}
+.subus:hover::before{
+  width: 0%;
+}
